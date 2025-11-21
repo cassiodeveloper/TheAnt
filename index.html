@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The ANT — O mascote de AppSec & DevSecOps</title>
+  <meta name="description" content="História, propósito e branding do mascote The ANT — a formiga dourada símbolo de Application Security e DevSecOps." />
+  <style>
+    /* ====== Design Tokens ====== */
+    :root{
+      --gold:#F2C700;           /* Primária */
+      --gold-100:#FFF2A6;       /* Realce claro */
+      --gold-200:#FFD84D;       /* Brilho */
+      --gold-700:#B58000;       /* Sombra */
+      --bg:#2A1D00;             /* Fundo escuro */
+      --ink:#EDE6D6;            /* Texto em fundo escuro */
+      --ink-dim:#C9BEA5;        /* Texto secundário */
+      --paper:#FAF6EC;          /* Fundo claro alternativo */
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --radius: 18px;
+    }
+
+    /* ====== Base Reset ====== */
+    *,*::before,*::after{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.5;background:var(--bg);color:var(--ink)}
+    img{max-width:100%;height:auto;display:block}
+    a{color:var(--gold)}
+    .wrap{width:min(1100px, 92%);margin-inline:auto}
+
+    /* ====== Utility ====== */
+    .btn{display:inline-block;padding:.9rem 1.2rem;border-radius:999px;font-weight:700;text-decoration:none}
+    .btn-primary{background:var(--gold);color:#1b1200;box-shadow:var(--shadow)}
+    .btn-ghost{border:1px solid var(--gold);color:var(--gold)}
+    .tag{display:inline-block;border:1px solid var(--gold);padding:.35rem .6rem;border-radius:999px;color:var(--gold);font-size:.85rem;margin-right:.4rem}
+    .muted{color:var(--ink-dim)}
+    .card{background:#201600;border:1px solid rgba(255,255,255,.06);border-radius:var(--radius);padding:1.2rem;box-shadow:var(--shadow)}
+
+    /* ====== Header/Hero ====== */
+    header{position:sticky;top:0;backdrop-filter:saturate(1.2) blur(10px);background:rgba(42,29,0,.85);border-bottom:1px solid rgba(255,255,255,.06);z-index:20}
+    nav{display:flex;align-items:center;justify-content:space-between;padding:.8rem 0}
+    nav .brand{display:flex;align-items:center;gap:.8rem;font-weight:900;letter-spacing:.5px}
+    nav .brand .dot{width:10px;height:10px;border-radius:50%;background:var(--gold)}
+    nav a{margin-left:1rem;text-decoration:none;color:var(--ink)}
+    nav a:hover{color:var(--gold)}
+
+    .hero{padding:6rem 0 3rem;background:
+      radial-gradient(1200px 600px at 10% -10%, rgba(242,199,0,.18), transparent 60%),
+      radial-gradient(800px 400px at 120% 0%, rgba(242,199,0,.12), transparent 60%)}
+    .hero-grid{display:grid;grid-template-columns: 1.1fr .9fr;gap:2rem;align-items:center}
+    .hero h1{font-size:clamp(2rem, 2vw + 1.6rem, 3.2rem);line-height:1.1;margin:0 0 .6rem}
+    .hero p{font-size:1.1rem;margin:0 0 1.2rem}
+    .hero .actions{display:flex;gap:.8rem;flex-wrap:wrap}
+    .hero .figure{border-radius:var(--radius);overflow:hidden;background:#1b1200;border:1px solid rgba(255,255,255,.06)}
+    .hero .figure .placeholder{aspect-ratio:1/1.0;display:grid;place-items:center;color:var(--ink-dim)}
+
+    /* ====== Sections ====== */
+    section{padding:3.4rem 0}
+    h2{font-size:1.8rem;margin:.2rem 0 1rem}
+    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem}
+    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+    .swatch{display:flex;align-items:center;gap:1rem}
+    .swatch div{width:52px;height:52px;border-radius:12px;border:1px solid rgba(255,255,255,.12)}
+
+    /* ====== Footer ====== */
+    footer{padding:2rem 0;border-top:1px solid rgba(255,255,255,.08);color:var(--ink-dim)}
+
+    @media (max-width:900px){
+      .hero-grid,.two-col{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <nav>
+        <div class="brand"><span class="dot" aria-hidden="true"></span><span>The ANT</span></div>
+        <div class="links">
+          <a href="#proposito">Propósito</a>
+          <a href="#historia">História</a>
+          <a href="#cores">Cores</a>
+          <a href="#evolucao">Evolução</a>
+          <a href="#downloads">Assets</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Hero ===== -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="tag">Mascote de AppSec & DevSecOps</div>
+          <h1>The ANT — a formiga dourada da engenharia segura</h1>
+          <p>Pequena, resiliente e coletiva. A identidade que sintetiza Red, Blue, Orange e Yellow Teams em <b>ouro</b> — a prática contínua de Application Security.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#proposito">Entenda o propósito</a>
+            <a class="btn btn-ghost" href="#downloads">Baixar assets</a>
+          </div>
+        </div>
+        <div class="figure">
+          <!-- Substitua a imagem abaixo pelo seu arquivo da formiga em perfil (PNG/SVG) -->
+          <div class="placeholder"><em>Imagem do mascote aqui</em></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Propósito ===== -->
+    <section id="proposito">
+      <div class="wrap two-col">
+        <div>
+          <h2>Propósito</h2>
+          <p>Dar um rosto à cultura de segurança que <b>não trava o fluxo</b> — protege enquanto acelera. A formiga simboliza disciplina, trabalho invisível e a força de uma colônia alinhada: <b>Dev + Sec + Ops</b>.</p>
+          <ul>
+            <li><b>Coletivo</b>: segurança como prática de time, não como etapa.</li>
+            <li><b>Constância</b>: pequenas ações diárias que blindam o produto.</li>
+            <li><b>Defesa ativa</b>: mandíbulas em pinça, prontas para remover riscos.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3 style="margin-top:0">Mensagem curta</h3>
+          <p class="muted">“Small, relentless, unbreakable.”</p>
+          <p class="muted">“A soma de todos os times: Red + Blue + Orange + Yellow = Gold.”</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== História / Linha do Tempo ===== -->
+    <section id="historia" style="background:linear-gradient(180deg,#201600, #1b1200)">
+      <div class="wrap">
+        <h2>Da ideia ao símbolo</h2>
+        <div class="gallery">
+          <!-- Troque os placeholders por imagens reais do processo (rascunhos, versões com e sem texto, etc.) -->
+          <div class="card"><img alt="Primeiros estudos com cadeado/engrenagem" src=""/><p class="muted">Explorando metáforas (evitando clichês).</p></div>
+          <div class="card"><img alt="Virada para a Formiga Dourada" src=""/><p class="muted">Fusão de cores de times & biologia real.</p></div>
+          <div class="card"><img alt="Ângulo ¾ e mandíbulas" src=""/><p class="muted">Silhueta correta: longe de abelha/barata.</p></div>
+          <div class="card"><img alt="Versão final em perfil" src=""/><p class="muted">Marca principal aprovada.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Cores ===== -->
+    <section id="cores" style="background:var(--paper);color:#2a1d00">
+      <div class="wrap two-col">
+        <div>
+          <h2>Paleta & significado</h2>
+          <p>Ouro como síntese de disciplinas: <b>Red</b> (ofensivo), <b>Blue</b> (defensivo), <b>Orange</b> (educação/ponte) e <b>Yellow</b> (qualidade). A Ant é o ponto de equilíbrio — prática constante de AppSec.</p>
+          <div class="swatch" style="margin-top:1rem">
+            <div style="background:#F2C700"></div>
+            <div style="background:#B58000"></div>
+            <div style="background:#FFD84D"></div>
+            <div style="background:#2A1D00"></div>
+          </div>
+          <p class="muted">Primária: #F2C700 · Sombra: #B58000 · Brilho: #FFD84D · Fundo: #2A1D00</p>
+        </div>
+        <div class="card">
+          <h3 style="margin-top:0">Aplicações</h3>
+          <ul>
+            <li>Fundo escuro com formiga dourada (principal).</li>
+            <li>Versão inversa (outline branco) para gravação/bordado.</li>
+            <li>Ícone simplificado para avatar, favicon e adesivo pequeno.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Especificações do Mascote ===== -->
+    <section id="mascote">
+      <div class="wrap two-col">
+        <div>
+          <h2>Especificações do mascote</h2>
+          <ul>
+            <li>Ângulo ¾ de perfil; cabeça com <b>mandíbulas em pinça</b> (não confundir com antenas).</li>
+            <li>Corpo segmentado: cabeça · tórax · abdômen alongado; seis patas finas e arqueadas.</li>
+            <li>Acabamento com brilho discreto (gold), sem exagero cartoon.</li>
+            <li>Versões: cheia (gradiente), chapada (flat), traço (outline).</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3 style="margin-top:0">Arquivos recomendados</h3>
+          <ul class="muted">
+            <li>Logo principal em <b>SVG</b> + PNG transparente (2048px).</li>
+            <li>Ícone 512/256/128/64 px para apps e redes.</li>
+            <li>Kit monocromático (preto/branco) para impressão.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Evolução (comparativo) ===== -->
+    <section id="evolucao" style="background:linear-gradient(180deg,#1b1200,#120b00)">
+      <div class="wrap">
+        <h2>Evolução visual</h2>
+        <div class="gallery">
+          <div class="card"><div class="placeholder" style="aspect-ratio:4/3;display:grid;place-items:center;color:#aa9"><em>V1 — abelha-ish</em></div></div>
+          <div class="card"><div class="placeholder" style="aspect-ratio:4/3;display:grid;place-items:center;color:#aa9"><em>V2 — vista superior (barata)</em></div></div>
+          <div class="card"><div class="placeholder" style="aspect-ratio:4/3;display:grid;place-items:center;color:#aa9"><em>V3 — perfil com pinças</em></div></div>
+          <div class="card"><div class="placeholder" style="aspect-ratio:4/3;display:grid;place-items:center;color:#aa9"><em>V4 — final aprovada</em></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Downloads / CTA ===== -->
+    <section id="downloads" style="background:var(--paper);color:#2a1d00">
+      <div class="wrap two-col">
+        <div>
+          <h2>Baixar assets</h2>
+          <p>Pacote com versões em SVG, PNG, outline e paleta de cores para uso em apresentações, camisetas e sites.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#" aria-disabled="true">Baixar kit (em breve)</a>
+            <a class="btn btn-ghost" href="#contato">Falar comigo</a>
+          </div>
+          <p class="muted" style="margin-top:.8rem">Dica: publique o kit no GitHub Releases ou como arquivo público no seu site.</p>
+        </div>
+        <div class="card">
+          <h3 style="margin-top:0">Licença sugerida</h3>
+          <p class="muted">Uso livre para comunidade com atribuição. Uso comercial mediante autorização.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contato ===== -->
+    <section id="contato">
+      <div class="wrap two-col">
+        <div>
+          <h2>Entre na colônia</h2>
+          <p>Quer levar o The ANT para seu time, evento ou curso? Compartilhe sua aplicação da marca e vamos fortalecer a cultura de AppSec.</p>
+          <p class="muted">Sugestão: colocar aqui um formulário simples (Netlify Forms / Formspree / Google Forms).</p>
+        </div>
+        <div class="card">
+          <p class="muted">Links rápidos:</p>
+          <ul>
+            <li><a href="#proposito">Propósito</a></li>
+            <li><a href="#cores">Paleta</a></li>
+            <li><a href="#downloads">Assets</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <small>© The ANT — AppSec/DevSecOps. Identidade criada em colaboração com a comunidade.</small>
+    </div>
+  </footer>
+</body>
+</html>
