@@ -1,0 +1,5 @@
+User-agent: *
+Disallow:
+
+# Hotsite The ANT
+Sitemap: https://cassiodeveloper.com.br/TheAnt/sitemap.xml

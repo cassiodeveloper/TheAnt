@@ -1,0 +1,32 @@
+{
+  "name": "The ANT — Mascote de AppSec & DevSecOps",
+  "short_name": "The ANT",
+  "description": "A formiga dourada símbolo da cultura de Application Security e DevSecOps.",
+  "lang": "pt-BR",
+  "start_url": "/TheAnt",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#F2C700",
+  "background_color": "#2A1D00",
+  "icons": [
+    {
+      "src": "/favicons/the-ant-180.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicons/the-ant-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicons/the-ant-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
